@@ -24,4 +24,4 @@ $ bash <( curl -sL https://git.io/vX4cl ) install
 
 {% endmethod %}
 
-After installing please read the quick-start guide for more information.
+After installing please read the [Quick Start Guide](quick-start.md) for more information.
