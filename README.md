@@ -36,16 +36,22 @@ Both versions of po-util have the same features. In December 2016, Homebrew Edit
 
 # Key Features
 
-### Library Manager
+{% method %}
+
+# Library Manager
 
 The library manager makes it easy to use Particle libraries when developing
 with po-util locally by using `git` to download Particle libraries hosted on
 GitHub and save them to a ~/.po-util/lib directory so that they make be linked
 inside of projects later. [Read more about the Library Manager here.](https://community.particle.io/t/how-to-use-po-utils-library-manager/26735)
 
-<p align="center">
+{% sample lang="cpp" %}
+
+<br>
 <img src="images/lib.gif">
-</p>
+
+
+{% endmethod %}
 
 ### Full dependency setup
 
