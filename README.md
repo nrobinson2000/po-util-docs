@@ -117,18 +117,25 @@ bin/
 
 {% endmethod %}
 
+{% method %}
+
 # Project setup
 
 When using `po-util`, your code is arranged into projects with the structure
 described above. This not only lets you easily work on many projects on one
 computer, but it provides a standardized way of building locally.
 
-Creating a project with `po-util` is simple when you use `po init` to initialize a project by creating the necessary files. Below is an example:
-
-    $ po init DEVICE_TYPE someProject
+Creating a project with `po-util` is simple when you use `po init` to initialize a project by creating the necessary files.
 
 You can set `DEVICE_TYPE` to either `photon`, `P1`, `electron`, `core`, `pi`, or `duo`. This is
 necessary for generating the Atom shortcuts file appropriately.
+
+{% sample lang="cpp" %}
+```bash
+$ po init DEVICE_TYPE someProject
+```
+
+{% endmethod %}
 
 # More Information
 
