@@ -50,13 +50,11 @@ Write your project firmware in `firmware/main.cpp`
 ```cpp
 #include "Particle.h"
 
-void setup() // Put setup code here to run once
-{
+void setup() { // Put setup code here to run once
 
 }
 
-void loop() // Put code here to loop forever
-{
+void loop() { // Put code here to loop forever
 
 }
 ```
