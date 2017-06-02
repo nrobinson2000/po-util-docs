@@ -57,7 +57,7 @@ inside of projects later. [Read more about the Library Manager here.](https://co
 Development, including the [ARM toolchain](https://launchpad.net/gcc-arm-embedded), [dfu-util](https://dfu-util.sourceforge.net/),
 [nodejs](https://nodejs.org/en/), [particle-cli](https://github.com/spark/particle-cli) and the [Particle firmware](https://github.com/spark/firmware).
 
-### Local compilation and support for flashing over USB or OTA
+## Local compilation and support for flashing over USB or OTA
 
 Building firmware locally for Electrons, Photons and P1s, and automatically
 flashing over USB using dfu-util or Over The Air using particle-cli.
@@ -137,11 +137,9 @@ $ po init DEVICE_TYPE someProject
 
 {% endmethod %}
 
-# More Information
+{% method %}
 
-Here is some more information about using `po-util`.
-
-### Writing Firmware
+## Writing Firmware
 
 `po-util` compiles any `.cpp` and `.h` files found in the `firmware/`
 directory, but not `.ino` files, so `#include "Particle.h"` must be present
@@ -155,9 +153,11 @@ To compile firmware, simply run `po DEVICE_TYPE build`, substituting `DEVICE_TYP
 using dfu-util, simply run `po DEVICE_TYPE flash`. To clean the project, run `po
 DEVICE_TYPE clean`.
 
-<p align="center">
+{% sample lang="cpp" %}
+
 <img src="https://i.giphy.com/V6LteSojfcxKE.gif" width="800px">
-</p>
+
+{% endmethod %}
 
 ### DFU Commands
 
