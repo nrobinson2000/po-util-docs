@@ -146,7 +146,7 @@ directory, but not `.ino` files, so `#include "Particle.h"` must be present
 in your `main.cpp` file. This is done for you when you run the `po init`
 command to create a project directory.
 
-### Building Firmware
+## Building Firmware
 
 To compile firmware, simply run `po DEVICE_TYPE build`, substituting `DEVICE_TYPE` for
 `photon`, `P1`, or `electron`. To compile and flash firmware to your device
@@ -159,17 +159,24 @@ DEVICE_TYPE clean`.
 
 {% endmethod %}
 
-### DFU Commands
+{% method %}
+
+## DFU Commands
 
 To upload precompiled code over USB, run `po DEVICE_TYPE dfu`. To put your device
 into dfu mode, run `po dfu-open`. To get your device out of dfu mode, run `po
 dfu-close`.
 
-<p align="center">
-<img src="images/dfu.png">
-</p>
+{% sample lang="cpp" %}
 
-### Over The Air (OTA) Uploading
+<img src="images/dfu.png">
+
+{% endmethod %}
+
+
+{% method %}
+
+## Over The Air (OTA) Uploading
 
 To upload precompiled code over the air using particle-cli, run `po DEVICE_TYPE ota
 DEVICE_NAME`, where `DEVICE_NAME` is the name of your device in the Particle
@@ -183,11 +190,17 @@ project directory.
 
 **NOTE: This is different from the product firmware update feature in the Particle Console because it updates the firmware of devices one at a time and only if the devices are online when the command is run.**
 
+{% sample lang="cpp" %}
+
 <p align="center">
 <img src="images/ota.png">
 </p>
 
-### Triggering DFU mode on your Device(s)
+{% endmethod %}
+
+{% method %}
+
+## Triggering DFU mode on your Device(s)
 
 By default, `po-util` changes the trigger DFU Mode baud rate to `19200`, as it
 is a more friendly baud rate for Linux Distributions. To make your device(s)
@@ -197,6 +210,8 @@ update the system firmware on your device(s).
 If you wish to use the default Particle DFU Mode baud rate, you may change the
 `DFUBAUDRATE=19200` line in the `~/.po` configuration file to
 `DFUBAUDRATE=14400`.
+
+{% endmethod %}
 
 # Testimonials
 
