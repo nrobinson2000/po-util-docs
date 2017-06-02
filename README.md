@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://nrobinson2000.github.io/po-util/logos/po-util-updated.svg">
+<img width="400" src="https://nrobinson2000.github.io/po-util/logos/po-util-updated.svg">
 </p>
 
 # Particle Offline Utility: The Ultimate Local Particle Experience for Linux and macOS
