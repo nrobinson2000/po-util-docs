@@ -20,6 +20,7 @@ $ bash <( curl -sL https://raw.githubusercontent.com/nrobinson2000/po-util/maste
 ```
 
 {% common %}
-After installing please read the quick-start guide for more information.
 
 {% endmethod %}
+
+After installing please read the quick-start guide for more information.
