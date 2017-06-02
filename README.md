@@ -65,7 +65,7 @@ Both versions of po-util have the same features. In December 2016, Homebrew Edit
 The library manager makes it easy to use Particle libraries when developing
 with po-util locally by using `git` to download Particle libraries hosted on
 GitHub and save them to a ~/.po-util/lib directory so that they make be linked
-inside of projects later. [Read more about the Library Manager here.](http://community.particle.io/t/how-to-use-po-utils-library-manager/26735)
+inside of projects later. [Read more about the Library Manager here.](https://community.particle.io/t/how-to-use-po-utils-library-manager/26735)
 
 <p align="center">
 <img src="images/lib.gif">
@@ -74,7 +74,7 @@ inside of projects later. [Read more about the Library Manager here.](http://com
 ### Full dependency setup
 
 `po-util` installs all of the dependencies required for local Particle
-Development, including the [ARM toolchain](https://launchpad.net/gcc-arm-embedded), [dfu-util](http://dfu-util.sourceforge.net/),
+Development, including the [ARM toolchain](https://launchpad.net/gcc-arm-embedded), [dfu-util](https://dfu-util.sourceforge.net/),
 [nodejs](https://nodejs.org/en/), [particle-cli](https://github.com/spark/particle-cli) and the [Particle firmware](https://github.com/spark/firmware).
 
 ### Local compilation and support for flashing over USB or OTA
@@ -89,10 +89,10 @@ Sequentially flashing multiple devices at once over the air is also supported.
 source IDE by GitHub. The shourcuts provide quick access to commonly used
 commands for `po-util`, including: building firmware, flashing firmware over
 USB, and flashing firmware Over The Air. [Read more about the shortcuts
-here.](http://community.particle.io/t/po-util-a-toolchain-installer-helper-for-linux-and-osx/21015/29?u=nrobinson2000)
+here.](https://community.particle.io/t/po-util-a-toolchain-installer-helper-for-linux-and-osx/21015/29?u=nrobinson2000)
 
 <p align="center">
-<img src="http://i.giphy.com/11w4YEQHmUy06s.gif" width="800px">
+<img src="https://i.giphy.com/11w4YEQHmUy06s.gif" width="800px">
 </p>
 
 # Project Structure
@@ -158,7 +158,7 @@ using dfu-util, simply run `po DEVICE_TYPE flash`. To clean the project, run `po
 DEVICE_TYPE clean`.
 
 <p align="center">
-<img src="http://i.giphy.com/V6LteSojfcxKE.gif" width="800px">
+<img src="https://i.giphy.com/V6LteSojfcxKE.gif" width="800px">
 </p>
 
 ### DFU Commands
@@ -203,16 +203,16 @@ If you wish to use the default Particle DFU Mode baud rate, you may change the
 # Testimonials
 
 <blockquote><p>"I think you identified a common pain point for a lot of users, and the automated installation of the Particle toolchain is a problem that we've been focused on a lot recently ... you should already feel proud of yourself because you have made a meaningful contribution to the community. We are all very thankful for it - our community regularly impresses us, and you are certainly not an exception."</p>
-<p style="text-align: left"><a href="http://nrobinson2000.me/po-util-recognition.pdf">Will Hart, Particle General Manager</a></p></blockquote>
+<p style="text-align: left"><a href="https://nrobinson2000.me/po-util-recognition.pdf">Will Hart, Particle General Manager</a></p></blockquote>
 <hr>
 
 <blockquote><p>"It has been nearly flawless and a HUGE productivity booster... I cannot believe your steps worked installing so many utils and dependencies perfectly... The Particle world owes you a big debt. If there were Emmy awards for Particle contribs, you would get one."</p>
-<p style="text-align: left"><a href="http://community.particle.io/t/moving-project-from-web-ide-to-particle-dev-on-a-mac/28398/5?u=nrobinson2000">Andrew Ward, Particle Community Member</a></p></blockquote>
+<p style="text-align: left"><a href="https://community.particle.io/t/moving-project-from-web-ide-to-particle-dev-on-a-mac/28398/5?u=nrobinson2000">Andrew Ward, Particle Community Member</a></p></blockquote>
 <hr>
 
 <blockquote><p>"Nice! This is great stuff. Definitely helpful for the local dev / offline use case.
 Thanks for sharing."</p>
-<p style="text-align: left"><a href="http://community.particle.io/t/po-util-a-toolchain-installer-helper-for-linux-and-osx/21015/2?u=nrobinson2000">Avidan Ross, Particle Investor</a></p></blockquote>
+<p style="text-align: left"><a href="https://community.particle.io/t/po-util-a-toolchain-installer-helper-for-linux-and-osx/21015/2?u=nrobinson2000">Avidan Ross, Particle Investor</a></p></blockquote>
 <hr>
 
 <blockquote><p>"Thanks a lot for this amazing tool. I finally managed to get everything as I wanted: to be able to work off-line."</p>
@@ -220,8 +220,8 @@ Thanks for sharing."</p>
 <hr>
 
 <blockquote><p>"Po-util is a very handy script - thanks for sharing."</p>
-<p style="text-align: left"><a href="http://community.particle.io/t/po-util-a-toolchain-installer-helper-for-linux-and-osx/21015/15?u=nrobinson2000">H.S, Particle Community Member</a></p></blockquote>
+<p style="text-align: left"><a href="https://community.particle.io/t/po-util-a-toolchain-installer-helper-for-linux-and-osx/21015/15?u=nrobinson2000">H.S, Particle Community Member</a></p></blockquote>
 <hr>
 
 <blockquote><p>"I can't heart this enough!"</p>
-<p style="text-align: left"><a href="http://community.particle.io/t/po-util-a-toolchain-installer-helper-for-linux-and-osx/21015/27?u=nrobinson2000">Josh Fisher, Particle Community Member</a></p></blockquote>
+<p style="text-align: left"><a href="https://community.particle.io/t/po-util-a-toolchain-installer-helper-for-linux-and-osx/21015/27?u=nrobinson2000">Josh Fisher, Particle Community Member</a></p></blockquote>
