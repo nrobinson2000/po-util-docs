@@ -14,6 +14,8 @@
 [![Circle CI](https://circleci.com/gh/nrobinson2000/po-util/tree/master.svg?style=svg)](https://circleci.com/gh/nrobinson2000/po-util/tree/master)
 [![](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&maxAge=2592000)](https://twitter.com/intent/tweet?ref_src=twsrc%5Etfw&text=Check%20out%20po-util.%20It%27s%20a%20handy%20script%20for%20installing%20and%20using%20the%20%40particle%20Toolchain%20on%20Linux%20and%20macOS.&tw_p=tweetbutton&url=https%3A%2F%2Fnrobinson2000.github.io/po-util/)
 
+{% method %}
+
 Particle Offline Utility, pronounced `po-util`, is a tool for installing and
 using the Particle Toolchain on Linux and macOS.
 
@@ -23,9 +25,12 @@ using the Particle Toolchain on Linux and macOS.
 need for seamless local development, providing understandable commands for
 simplifying complex tasks like properly compiling and flashing firmware.
 
-<p align="center">
+{% sample lang="cpp" %}
+
 <img src="images/build.gif">
-</p>
+
+
+{% endmethod %}
 
 # Install
 
