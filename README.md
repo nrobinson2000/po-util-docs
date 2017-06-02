@@ -131,12 +131,11 @@ You can set `DEVICE_TYPE` to either `photon`, `P1`, `electron`, `core`, `pi`, or
 necessary for generating the Atom shortcuts file appropriately.
 
 {% sample lang="cpp" %}
+<br>
+<br>
+<br>
 ```bash
-
-
 $ po init DEVICE_TYPE someProject
-
-
 ```
 
 {% endmethod %}
