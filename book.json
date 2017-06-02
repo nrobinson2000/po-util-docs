@@ -4,14 +4,19 @@
         "theme-api": {
             "languages": [
                 {
-                    "lang": "js",
-                    "name": "JavaScript",
+                    "lang": "cpp",
+                    "name": "Particle",
                     "default": true
                 },
                 {
-                    "lang": "go",
-                    "name": "Go"
+                    "lang": "bash",
+                    "name": "macOS"
+                },
+                {
+                    "lang": "bash",
+                    "name": "Linux"
                 }
+                
             ]
         }
     }
