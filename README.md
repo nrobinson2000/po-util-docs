@@ -188,7 +188,7 @@ You can also flash code to multiple devices at once by passing the `-m` or
 relies on a file called `devices.txt` that you must create in your `po-util`
 project directory.
 
-**NOTE: This is different from the product firmware update feature in the Particle Console because it updates the firmware of devices one at a time and only if the devices are online when the command is run.**
+**This is different from the product firmware update feature in the Particle Console because it updates the firmware of devices one at a time and only if the devices are online when the command is run.**
 
 {% sample lang="cpp" %}
 
@@ -210,6 +210,18 @@ update the system firmware on your device(s).
 If you wish to use the default Particle DFU Mode baud rate, you may change the
 `DFUBAUDRATE=19200` line in the `~/.po` configuration file to
 `DFUBAUDRATE=14400`.
+
+{% sample lang="cpp" %}
+
+```bash
+$ po dfu-open # Automatically place a device in dfu mode
+
+$ po dfu-list # Quickly find any devices in /dev/cu.*
+
+$ po dfu-open -d /dev/cu.usbmodem1441 # Put a specific device into DFU mode
+
+$ po dfu-close # Get device out of dfu mode
+```
 
 {% endmethod %}
 
