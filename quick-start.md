@@ -1,5 +1,7 @@
 # Quick Start Guide
 
+Here is the guide to get start with po-util in five minutes or less.
+
 {% method %}
 
 # Upgrade your device's firmware
@@ -14,6 +16,21 @@ In order to use po-util with your Photon, P1, Electron, or Redbear Duo, you must
 
 $ po DEVICE_TYPE upgrade
 ```
+{% endmethod %}
 
+
+{% method %}
+
+#Create a project
+
+When using po-util, your code is organized into project repositories that follow a standardized structure.
+
+{% sample lang="cpp" %}
+
+```bash
+$ po init DEVICE_TYPE PROJECT_NAME
+```
+
+This creates a project repository called `PROJECT_NAME` in the current working directory.
 
 {% endmethod %}
