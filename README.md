@@ -1,5 +1,4 @@
 {% method %}
-
 #po-util Docs
 
 <img width="400" src="https://nrobinson2000.github.io/po-util/logos/po-util-updated.svg">
@@ -16,9 +15,11 @@ simplifying complex tasks like properly compiling and flashing firmware.
 {% sample lang="cpp" %}
 <br>
 <img src="images/build.gif">
-
-
 {% endmethod %}
+
+
+
+{% method %}
 
 # Install
 
@@ -48,9 +49,12 @@ There are two versions of po-util. The first is [po-util Classic](https://github
 **Note:**
 Both versions of po-util have the same features. In December 2016, Homebrew Edition was forked from po-util in order to allow po-util to be installed with Homebrew.  The original po-util was renamed to Classic, and was made Linux exclusive. Both Classic and Homebrew Edition continue to be developed and maintained in parallel.
 
-<p align="center">
+{% sample lang="cpp" %}
+
+<br>
 <img src="images/po.gif">
-</p>
+
+{% endmethod %}
 
 # Key Features
 
