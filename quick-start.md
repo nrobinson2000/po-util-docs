@@ -51,13 +51,17 @@ Write your project firmware in `firmware/main.cpp`
 #include "Particle.h"
 
 void setup() { // Put setup code here to run once
-
+  Particle.publish("Hello World!");
+  pinMode(D7, OUTPUT);
 }
 
 void loop() { // Put code here to loop forever
-
+  digitalWrite(D7, HIGH);
+  delay(500);
+  digitalWrite(D7, LOW);
+  delay(500);
 }
 ```
 
-This is the boilerplate code for Particle firmware.
+This is some example Particle firmware.
 {% endmethod %}
