@@ -1,9 +1,8 @@
+{% method %}
+
 #po-util Docs
 
 <img width="400" src="https://nrobinson2000.github.io/po-util/logos/po-util-updated.svg">
-
-
-{% method %}
 
 Particle Offline Utility, pronounced `po-util`, is a tool for installing and
 using the Particle Toolchain on Linux and macOS.
