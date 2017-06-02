@@ -29,7 +29,6 @@ Both versions of po-util have the same features. In December 2016, Homebrew Edit
 
 {% sample lang="cpp" %}
 
-<br>
 <img src="images/po.gif">
 
 {% endmethod %}
@@ -38,7 +37,7 @@ Both versions of po-util have the same features. In December 2016, Homebrew Edit
 
 {% method %}
 
-# Library Manager
+## Library Manager
 
 The library manager makes it easy to use Particle libraries when developing
 with po-util locally by using `git` to download Particle libraries hosted on
@@ -47,13 +46,12 @@ inside of projects later. [Read more about the Library Manager here.](https://co
 
 {% sample lang="cpp" %}
 
-<br>
 <img src="images/lib.gif">
 
 
 {% endmethod %}
 
-### Full dependency setup
+## Full dependency setup
 
 `po-util` installs all of the dependencies required for local Particle
 Development, including the [ARM toolchain](https://launchpad.net/gcc-arm-embedded), [dfu-util](https://dfu-util.sourceforge.net/),
@@ -65,7 +63,9 @@ Building firmware locally for Electrons, Photons and P1s, and automatically
 flashing over USB using dfu-util or Over The Air using particle-cli.
 Sequentially flashing multiple devices at once over the air is also supported.
 
-### Shortcuts for Building in Atom
+{% method %}
+
+## Shortcuts for Building in Atom
 
 `po-util` supports shortcuts for [Atom](https://atom.io), the popular open-
 source IDE by GitHub. The shourcuts provide quick access to commonly used
@@ -73,9 +73,12 @@ commands for `po-util`, including: building firmware, flashing firmware over
 USB, and flashing firmware Over The Air. [Read more about the shortcuts
 here.](https://community.particle.io/t/po-util-a-toolchain-installer-helper-for-linux-and-osx/21015/29?u=nrobinson2000)
 
-<p align="center">
+{% sample lang="cpp" %}
+
 <img src="https://i.giphy.com/11w4YEQHmUy06s.gif" width="800px">
-</p>
+
+
+{% endmethod %}
 
 # Project Structure
 
