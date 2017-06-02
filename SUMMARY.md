@@ -2,7 +2,7 @@
 
 ## Overview
 
-* [po-util Documentation](README.md)
+* [po-util Docs](README.md)
 
 ## Setup
 
