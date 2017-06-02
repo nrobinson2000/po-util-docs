@@ -132,7 +132,11 @@ necessary for generating the Atom shortcuts file appropriately.
 
 {% sample lang="cpp" %}
 ```bash
+
+
 $ po init DEVICE_TYPE someProject
+
+
 ```
 
 {% endmethod %}
