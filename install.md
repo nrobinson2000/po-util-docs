@@ -3,7 +3,7 @@
 
 Open a terminal and run the following to install po-util.
 
-{% sample name="macOS" %}
+{% sample lang="bash" name="macOS" %}
 On macOS, po-util is installed using [Homebrew](https://brew.sh).
 
 ```bash
@@ -12,7 +12,7 @@ $ brew install po
 $ po install
 ```
 
-{% sample name="Linux" %}
+{% sample lang="bash" name="Linux" %}
 On Linux distributions, po-util can be installed by directly running the install script.
 
 ```bash
