@@ -36,3 +36,30 @@ $ po init DEVICE_TYPE PROJECT_NAME
 This creates a project repository called `PROJECT_NAME` in the current working directory.
 
 {% endmethod %}
+
+
+
+{% method %}
+
+#Write your firmware
+
+Write your project firmware in `firmware/main.cpp`
+
+{% sample lang="cpp" %}
+
+```cpp
+#include "Particle.h"
+
+void setup() // Put setup code here to run once
+{
+
+}
+
+void loop() // Put code here to loop forever
+{
+
+}
+```
+
+This is the boilerplate code for Particle firmware.
+{% endmethod %}
