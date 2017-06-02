@@ -214,6 +214,8 @@ If you wish to use the default Particle DFU Mode baud rate, you may change the
 {% sample lang="cpp" %}
 
 ```bash
+$ po DEVICE upgrade # Upgrad device firmware to allow automatic DFU
+
 $ po dfu-open # Automatically place a device in dfu mode
 
 $ po dfu-list # Quickly find any devices in /dev/cu.*
