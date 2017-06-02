@@ -6,4 +6,4 @@
 
 ## Setup
 
-* [Installing](install.md)
+* [Installing po-util](install.md)

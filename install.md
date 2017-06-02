@@ -1,5 +1,6 @@
-{% method %}
 # Installing po-util
+
+{% method %}
 
 Open a terminal and run the following to install po-util.
 
