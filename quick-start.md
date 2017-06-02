@@ -15,7 +15,7 @@ In order to use po-util with your Photon, P1, Electron, or Redbear Duo, you must
 $ po DEVICE_TYPE upgrade
 ```
 
-Run the following with `photon`, `P1`, `electron`, or `duo` instead of `DEVICE_TYPE`
+Replace `DEVICE_TYPE` with: `photon`, `P1`, `electron`, or `duo`
 
 
 {% endmethod %}
