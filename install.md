@@ -16,7 +16,7 @@ $ po install
 On Linux distributions, po-util can be installed by directly running the install script.
 
 ```bash
-$ bash <( curl -sL https://raw.githubusercontent.com/nrobinson2000/po-util/master/po-util.sh ) install
+$ bash <( curl -sL https://git.io/vX4cl ) install
 ```
 
 {% common %}
