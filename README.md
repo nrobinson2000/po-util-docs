@@ -86,6 +86,13 @@ here.](https://community.particle.io/t/po-util-a-toolchain-installer-helper-for-
 
 The directory structure of a full `po-util` project is arranged like so:
 
+* All user code is kept inside of `firmware/`.
+* The compiled binary will be named `firmware.bin`, and it will be in `bin/`.
+* You can keep track of which devices are in a project and list which ones to be flashed Over The Air in `devices.txt`.
+* Libraries are kept track of in `libs.txt`.
+* Atom shortcuts are configured in`.atom-build.yml`.
+* Every `po-util` project is initialized as a repository with scripts in `ci/` to use [Travis CI](https://travis-ci.org/) for testing.
+
 {% sample lang="cpp" %}
 
 ```
@@ -107,14 +114,6 @@ bin/
  .git/
  README.md
 ```
-{% common %}
-
-  * All user code is kept inside of `firmware/`.
-  * The compiled binary will be named `firmware.bin`, and it will be in `bin/`.
-  * You can keep track of which devices are in a project and list which ones to be flashed Over The Air in `devices.txt`.
-  * Libraries are kept track of in `libs.txt`.
-  * Atom shortcuts are configured in`.atom-build.yml`.
-  * Every `po-util` project is initialized as a repository with scripts in `ci/` to use [Travis CI](https://travis-ci.org/) for testing.
 
 {% endmethod %}
 
