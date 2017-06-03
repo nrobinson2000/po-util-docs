@@ -7,7 +7,7 @@
 
 ## Setup
 
-* [Installing po-util](install.md)
+* [Install po-util](install.md)
 
 ## Usage
 
