@@ -11,7 +11,7 @@ After installing please read the [Quick Start Guide](quick-start.md) for more in
 $ bash <(curl -sL https://master.po-util.com/install)
 ```
 
-<script type="text/javascript" src="https://asciinema.org/a/123191.js" id="asciicast-123191" async></script>
+<script type="text/javascript" src="https://asciinema.org/a/123214.js" id="asciicast-123214" async></script>
 
 
 {% endmethod %}
