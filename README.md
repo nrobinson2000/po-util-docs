@@ -221,7 +221,7 @@ $ po DEVICE upgrade # Upgrade device firmware to allow automatic DFU
 
 $ po dfu-open # Automatically place a device in DFU mode
 
-$ po dfu-list # Quickly find any devices in /dev/cu.*
+$ po list # List all attached devices in serial
 
 $ po dfu-open -d /dev/cu.usbmodem1441 # Put a specific device into DFU mode
 
