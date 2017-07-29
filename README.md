@@ -205,20 +205,11 @@ project directory.
 
 ## Triggering DFU mode on your Device(s)
 
-By default, `po-util` changes the trigger DFU Mode baud rate to `19200`, as it
-is a more friendly baud rate for Linux Distributions. To make your device(s)
-recognize this baud rate, you must run `po DEVICE_TYPE upgrade`. This will also
-update the system firmware on your device(s).
-
-If you wish to use the default Particle DFU Mode baud rate, you may change the
-`DFUBAUDRATE=19200` line in the `~/.po` configuration file to
-`DFUBAUDRATE=14400`.
+One of the features of po-util is automatically placing devices into DFU mode for instant firmware upload over USB.
 
 {% sample lang="cpp" %}
 
 ```bash
-$ po DEVICE upgrade # Upgrade device firmware to allow automatic DFU
-
 $ po dfu-open # Automatically place a device in DFU mode
 
 $ po list # List all attached devices in serial
