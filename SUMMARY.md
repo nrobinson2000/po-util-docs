@@ -13,4 +13,4 @@
 
 * [Quick Start](quick-start.md)
 
-* [Manual](manual.html)
+* [Manual](MANUAL.md)
