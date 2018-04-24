@@ -9,8 +9,8 @@
 
 * [Install po-util](install.md)
 
-## Usage
+## Resources
 
 * [Quick Start](quick-start.md)
 
-## [Manual](manual.html)
+* [Manual](manual.html)
