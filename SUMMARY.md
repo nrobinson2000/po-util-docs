@@ -12,3 +12,5 @@
 ## Usage
 
 * [Quick Start](quick-start.md)
+
+## [Manual](manual.html)

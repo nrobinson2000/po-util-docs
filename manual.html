@@ -1,0 +1,761 @@
+<!-- Creator     : groff version 1.19.2 -->
+<!-- CreationDate: Tue Apr 24 13:44:37 2018 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta name="generator" content="groff -Thtml, see www.gnu.org">
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<meta name="Content-Style" content="text/css">
+<style type="text/css">
+       p     { margin-top: 0; margin-bottom: 0; }
+       pre   { margin-top: 0; margin-bottom: 0; }
+       table { margin-top: 0; margin-bottom: 0; }
+</style>
+<title>PO</title>
+
+</head>
+<body>
+
+<h1 align=center>PO</h1>
+
+<a href="#NAME">NAME</a><br>
+<a href="#SYNOPSIS">SYNOPSIS</a><br>
+<a href="#DESCRIPTION">DESCRIPTION</a><br>
+<a href="#OPTIONS">OPTIONS</a><br>
+<a href="#LIBRARY MANAGER">LIBRARY MANAGER</a><br>
+<a href="#OPTIONS">OPTIONS</a><br>
+<a href="#LIBRARY EXAMPLE MANAGER">LIBRARY EXAMPLE MANAGER</a><br>
+<a href="#KEYBOARD SHORTCUTS">KEYBOARD SHORTCUTS</a><br>
+<a href="#AUTHOR">AUTHOR</a><br>
+<a href="#REPORTING BUGS">REPORTING BUGS</a><br>
+<a href="#COPYRIGHT">COPYRIGHT</a><br>
+<a href="#SEE ALSO">SEE ALSO</a><br>
+<a href="#NOTES">NOTES</a><br>
+<a href="#CREDITS">CREDITS</a><br>
+
+<hr>
+
+
+<a name="NAME"></a>
+<h2>NAME</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>po-util</b>
+&minus; The Ultimate Local Particle Experience for Linux and
+macOS</p>
+
+<a name="SYNOPSIS"></a>
+<h2>SYNOPSIS</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>po</b>
+DEVICE_TYPE COMMAND DEVICE_NAME</p>
+
+<p style="margin-left:11%; margin-top: 1em"><b>po</b>
+DFU_COMMAND</p>
+
+<p style="margin-left:11%; margin-top: 1em"><b>po</b>
+install [full_install_path]</p>
+
+<p style="margin-left:11%; margin-top: 1em"><b>po</b>
+library LIBRARY_COMMAND</p>
+
+<a name="DESCRIPTION"></a>
+<h2>DESCRIPTION</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">Particle
+Offline Utility, called po-util or po, is a tool for
+installing and using the Particle Toolchain on Linux and
+macOS. Local building, firmware uploading using dfu-util or
+particle-cli, and library management are key features.</p>
+
+<p style="margin-left:11%; margin-top: 1em"><b>po-util</b>
+supports the Photon, Electron, Core, P1, Raspberry Pi, and
+Redbear Duo.</p>
+
+<a name="OPTIONS"></a>
+<h2>OPTIONS</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>install</b></p>
+
+<p style="margin-left:22%;">Download the tools needed for
+development. Requires sudo. You can also re-install with
+this command. You can optionally install to an alternate
+location by specifying [full_install_path].</p>
+
+<p style="margin-left:22%; margin-top: 1em">Example:
+<b>po</b> install ~/particle</p>
+
+<p style="margin-left:22%; margin-top: 1em">By default, the
+Particle firmware is installed in ~/github.</p>
+
+<table width="100%" border=0 rules="none" frame="void"
+       cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="7%">
+
+
+<p style="margin-top: 1em" valign="top"><b>build</b></p></td>
+<td width="4%"></td>
+<td width="78%">
+
+
+<p style="margin-top: 1em" valign="top">Locally compile
+code in &quot;firmware&quot; subdirectory using gcc-arm.</p></td>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="7%">
+
+
+<p><b>flash</b></p></td>
+<td width="4%"></td>
+<td width="78%">
+
+
+<p>Compile code and flash to device using dfu-util.</p></td>
+</table>
+
+<p style="margin-left:22%; margin-top: 1em">NOTE: You can
+supply another argument to &quot;build&quot; and
+&quot;flash&quot; to specify which firmware directory to
+compile.</p>
+
+<p style="margin-left:22%; margin-top: 1em">Example:</p>
+
+<p style="margin-left:22%; margin-top: 1em"><b>po</b>
+photon flash photon-firmware/</p>
+
+<table width="100%" border=0 rules="none" frame="void"
+       cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="7%">
+
+
+<p style="margin-top: 1em" valign="top"><b>clean</b></p></td>
+<td width="4%"></td>
+<td width="78%">
+
+
+<p style="margin-top: 1em" valign="top">Refresh all code
+(Run after switching device or directory).</p></td>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="7%">
+
+
+<p><b>init</b></p></td>
+<td width="4%"></td>
+<td width="78%">
+
+
+<p>Initialize your current working directory as a po-util
+project. You must specify which platform your project is
+for. You can supply another argument to specify to create a
+project folder. (Without this argument the current working
+directory is initialized as a project.) The purpose of the
+platform argument is to generate a
+&quot;.atom-build.yml&quot; file which provides keyboard
+shortcuts for using po-util within Atom. More information on
+the shortcuts is below.</p></td>
+</table>
+
+<p style="margin-left:22%; margin-top: 1em">Example:</p>
+
+<p style="margin-left:22%; margin-top: 1em"><b>po</b>
+photon init somePhotonProject</p>
+
+<table width="100%" border=0 rules="none" frame="void"
+       cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="9%">
+
+
+<p style="margin-top: 1em" valign="top"><b>create</b></p></td>
+<td width="2%"></td>
+<td width="78%">
+
+
+<p style="margin-top: 1em" valign="top">Initialize a
+project in ~/.po-util/projects, the default project
+folder.</p> </td>
+</table>
+
+<p style="margin-left:22%; margin-top: 1em">Example:</p>
+
+<p style="margin-left:22%; margin-top: 1em"><b>po</b>
+create photon somePhotonProject</p>
+
+<table width="100%" border=0 rules="none" frame="void"
+       cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="6%">
+
+
+<p style="margin-top: 1em" valign="top"><b>open</b></p></td>
+<td width="5%"></td>
+<td width="78%">
+
+
+<p style="margin-top: 1em" valign="top">Open a project in
+the default project folder in a sub-shell for quick access.
+You can exit the sub-shell to return to your previous
+session.</p> </td>
+</table>
+
+<p style="margin-left:22%; margin-top: 1em">Example:</p>
+
+<p style="margin-left:22%; margin-top: 1em"><b>po</b> open
+somePhotonProject</p>
+
+<table width="100%" border=0 rules="none" frame="void"
+       cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="9%">
+
+
+<p style="margin-top: 1em" valign="top"><b>update</b></p></td>
+<td width="2%"></td>
+<td width="78%">
+
+
+<p style="margin-top: 1em" valign="top">Download the latest
+releases of Redbear Duo firmware, Particle firmware,
+particle-cli and po-util. You may supply another argument to
+choose to only update only one firmware repository, using
+&quot;firmware&quot; for Particle, and &quot;duo&quot; for
+the Redbear Duo.</p></td>
+</table>
+
+<p style="margin-left:11%;"><b>upgrade</b></p>
+
+<p style="margin-left:22%;">Recompile and update the system
+firmware on a device.</p>
+
+<table width="100%" border=0 rules="none" frame="void"
+       cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="4%">
+
+
+<p style="margin-top: 1em" valign="top"><b>ota</b></p></td>
+<td width="7%"></td>
+<td width="67%">
+
+
+<p style="margin-top: 1em" valign="top">Upload code Over
+The Air using particle-cli.</p></td>
+<td width="11%">
+</td>
+</table>
+
+<p style="margin-left:22%; margin-top: 1em">NOTE: You can
+sequentially flash code to multiple devices by passing the
+-m or --multi argument to <b>ota</b></p>
+
+<p style="margin-left:22%; margin-top: 1em">Example:</p>
+
+<p style="margin-left:22%; margin-top: 1em"><b>po</b>
+photon ota -m product-firmware/</p>
+
+<p style="margin-left:22%; margin-top: 1em">NOTE: This is
+different from the product firmware update feature in the
+Particle Console because it updates the firmware of devices
+one at a time and only if the devices are online when the
+command is run.</p>
+
+<p style="margin-left:22%; margin-top: 1em">NOTE: Using -m
+or --multi depends on a <b>devices.txt</b> file inside of
+your project. The file must contain the names of your
+devices, one per line, and the devices must all be of the
+same type.</p>
+
+<p style="margin-left:11%;"><b>serial open</b></p>
+
+<p style="margin-left:22%; margin-top: 1em">Put a device
+into listening mode.</p>
+
+<p style="margin-left:22%; margin-top: 1em">You can specify
+a device with <b>-d</b></p>
+
+<p style="margin-left:22%; margin-top: 1em">Example:</p>
+
+<p style="margin-left:22%; margin-top: 1em"><b>po</b>
+serial open -d /dev/cu.usbmodem1441</p>
+
+<p style="margin-left:11%;"><b>serial monitor</b></p>
+
+<p style="margin-left:22%;">Monitor a device&rsquo;s serial
+output using <b>screen</b> (Close with CRTL-A +D)</p>
+
+<table width="100%" border=0 rules="none" frame="void"
+       cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="9%">
+
+
+<p style="margin-top: 1em" valign="top"><b>config</b></p></td>
+<td width="2%"></td>
+<td width="78%">
+
+
+<p style="margin-top: 1em" valign="top">Select Particle
+firmware branch and DFU trigger baud rate.</p></td>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="9%">
+
+
+<p><b>setup</b></p></td>
+<td width="2%"></td>
+<td width="78%">
+
+
+<p>Get a device&rsquo;s ID and connect it Wi-Fi. Manually
+claim it after.</p></td>
+</table>
+
+<p style="margin-left:11%;"><b>ls, list</b></p>
+
+<p style="margin-left:22%;">List devices on serial
+ports.</p>
+
+<table width="100%" border=0 rules="none" frame="void"
+       cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="4%">
+
+
+<p style="margin-top: 1em" valign="top"><b>dfu</b></p></td>
+<td width="7%"></td>
+<td width="60%">
+
+
+<p style="margin-top: 1em" valign="top">Flash pre-compiled
+code to your device.</p></td>
+<td width="18%">
+</td>
+</table>
+
+<p style="margin-left:22%; margin-top: 1em">Example:</p>
+
+<p style="margin-left:22%; margin-top: 1em"><b>po
+photon</b> dfu</p>
+
+<p style="margin-left:11%;"><b>dfu open</b></p>
+
+<p style="margin-left:22%;">Put a device into DFU mode.</p>
+
+<p style="margin-left:22%; margin-top: 1em">You can specify
+a device with <b>-d</b></p>
+
+<p style="margin-left:22%; margin-top: 1em">Example:</p>
+
+<p style="margin-left:22%; margin-top: 1em"><b>po</b> dfu
+open -d /dev/cu.usbmodem1441</p>
+
+<p style="margin-left:11%;"><b>dfu close</b></p>
+
+<p style="margin-left:22%;">Get device out of DFU mode.</p>
+
+<p style="margin-left:11%;"><b>lib, library</b></p>
+
+<p style="margin-left:22%;">Library manager command for
+po-util.</p>
+
+<a name="LIBRARY MANAGER"></a>
+<h2>LIBRARY MANAGER</h2>
+
+
+<table width="100%" border=0 rules="none" frame="void"
+       cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="9%">
+
+
+<p style="margin-top: 1em" valign="top"><b>po lib</b></p></td>
+<td width="2%"></td>
+<td width="78%">
+
+
+<p style="margin-top: 1em" valign="top">The library manager
+makes it easy to use Particle libraries hosted on GitHub
+with your projects. It does this by keeping the library
+repositories in <b>~/.po-util/lib</b> and creating symbolic
+links to the relevant library files in your projects. It
+keeps track of which libraries are used in a project in a
+<b>libs.txt</b> file in every project. More features which
+are listed below.</p></td>
+</table>
+
+<a name="OPTIONS"></a>
+<h2>OPTIONS</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>get,
+install</b></p>
+
+<p style="margin-left:22%;">Download a Particle Library
+with Git and optionally name it. If run with no arguments,
+libraries listed in &quot;libs.txt&quot; are installed.</p>
+
+<p style="margin-left:22%; margin-top: 1em">Example of
+downloading a library from GitHub:</p>
+
+<p style="margin-left:22%; margin-top: 1em"><b>po lib</b>
+get https://github.com/someUser/libraryName libraryName</p>
+
+<p style="margin-left:11%;"><b>add, import</b></p>
+
+<p style="margin-left:22%;">Add a downloaded library to a
+po-util project. Libraries are added in the firmware
+directory as soft links. Additionally, the library
+information is added to &quot;libs.txt&quot; so that you can
+keep track of your libraries and restore them in the
+future.</p>
+
+<p style="margin-left:22%; margin-top: 1em">Example adding
+an installed library to a project:</p>
+
+<p style="margin-left:22%; margin-top: 1em"><b>po lib</b>
+add libraryName</p>
+
+<p style="margin-left:11%;"><b>rm, remove</b></p>
+
+<p style="margin-left:22%;">Remove a library from a po-util
+project. Just the soft links are deleted.</p>
+
+<p style="margin-left:22%; margin-top: 1em">Example:</p>
+
+<p style="margin-left:22%; margin-top: 1em"><b>po lib</b>
+rm libraryName</p>
+
+<table width="100%" border=0 rules="none" frame="void"
+       cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="9%">
+
+
+<p style="margin-top: 1em" valign="top"><b>create</b></p></td>
+<td width="2%"></td>
+<td width="78%">
+
+
+<p style="margin-top: 1em" valign="top">Create other
+libraries from other C++ files in a library. Useful for when
+multiple libraries are packaged together and need to be
+separated.</p> </td>
+</table>
+
+<p style="margin-left:22%; margin-top: 1em">Example:</p>
+
+<p style="margin-left:22%; margin-top: 1em"><b>cd</b>
+~/.po-util/lib/someLibWithOtherLibsInside</p>
+
+<p style="margin-left:22%; margin-top: 1em"><b>po lib</b>
+create</p>
+
+<table width="100%" border=0 rules="none" frame="void"
+       cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="7%">
+
+
+<p style="margin-top: 1em" valign="top"><b>purge</b></p></td>
+<td width="4%"></td>
+<td width="73%">
+
+
+<p style="margin-top: 1em" valign="top">Uninstall (delete)
+a library from ~/.po-util/lib</p></td>
+<td width="5%">
+</td>
+</table>
+
+<p style="margin-left:22%; margin-top: 1em">Example:</p>
+
+<p style="margin-left:22%; margin-top: 1em"><b>po lib</b>
+purge someLibrary</p>
+
+<p style="margin-left:11%;"><b>ls, list</b></p>
+
+<p style="margin-left:22%;">List all downloaded libraries.
+Libraries are kept in:</p>
+
+
+<p style="margin-left:22%; margin-top: 1em"><b>~/.po-util/lib</b></p>
+
+<p style="margin-left:11%;"><b>src, source</b></p>
+
+<p style="margin-left:22%;">List all downloaded libraries
+that are repositories and include their Git URL&rsquo;s.</p>
+
+<table width="100%" border=0 rules="none" frame="void"
+       cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="7%">
+
+
+<p style="margin-top: 1em" valign="top"><b>setup</b></p></td>
+<td width="4%"></td>
+<td width="70%">
+
+
+<p style="margin-top: 1em" valign="top">A combination of
+<b>po lib install</b> and <b>po lib add</b></p></td>
+<td width="8%">
+</td>
+</table>
+
+<p style="margin-left:22%; margin-top: 1em">Libraries
+listed in &quot;libs.txt&quot; are installed and symlinks
+are created.</p>
+
+<table width="100%" border=0 rules="none" frame="void"
+       cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="7%">
+
+
+<p style="margin-top: 1em" valign="top"><b>clean</b></p></td>
+<td width="4%"></td>
+<td width="78%">
+
+
+<p style="margin-top: 1em" valign="top">All symlinks in the
+project are removed, but &quot;libs.txt&quot; is untouched.
+This is ideal for releasing you project, as there will be no
+linked libraries in the &quot;firmware&quot; directory, but
+rather a list that people can run &quot;po lib setup&quot;
+to download your project&rsquo;s dependencies.</p></td>
+</table>
+
+<p style="margin-left:11%;"><b>pack, package,
+export</b></p>
+
+<p style="margin-left:22%;">Copy your source code and
+linked libraries in &quot;firmware&quot; into a packaged
+directory inside of your project. A tarball of the packaged
+directory is also created. A useful method for sharing your
+project with users who do not have po-util.</p>
+
+<p style="margin-left:22%; margin-top: 1em">NOTE: If you
+are building for Raspberry Pi, Docker will not follow the
+symlinked files, and you will have to build the packaged
+directory instead.</p>
+
+<p style="margin-left:22%; margin-top: 1em"><b>po lib
+pack</b></p>
+
+<p style="margin-left:22%; margin-top: 1em"><b>po pi build
+&lt;PROJECT&gt;-packaged</b></p>
+
+<p style="margin-left:11%;"><b>update, refresh</b></p>
+
+<p style="margin-left:22%;">Update your (git)
+libraries.</p>
+
+<p style="margin-left:11%;"><b>view-headers</b></p>
+
+<p style="margin-left:22%;">View any dependencies included
+libraries may have.</p>
+
+<p style="margin-left:11%;"><b>ex, examples</b></p>
+
+<p style="margin-left:22%;">Library example manager. Can be
+used to list available examples for a library and load them
+into a project.</p>
+
+<a name="LIBRARY EXAMPLE MANAGER"></a>
+<h2>LIBRARY EXAMPLE MANAGER</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>po lib
+ex</b></p>
+
+<p style="margin-left:22%;">A work in progress. The Library
+Example Manger allows you to find examples in a library and
+load them into your project for testing or modification.
+Your original source code is backed up in the
+&quot;main.cpp.YYYY-MM-DD-HH-mm.txt&quot; format. A
+&quot;libs.txt&quot; will be generated from the example upon
+loading.</p>
+
+<p style="margin-left:11%;"><b>ls, list</b></p>
+
+<p style="margin-left:22%;">List all examples in a
+Library.</p>
+
+<p style="margin-left:22%; margin-top: 1em">Example:</p>
+
+<p style="margin-left:22%; margin-top: 1em"><b>po lib
+ex</b> ls libraryName</p>
+
+<table width="100%" border=0 rules="none" frame="void"
+       cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="6%">
+
+
+<p style="margin-top: 1em" valign="top"><b>load</b></p></td>
+<td width="5%"></td>
+<td width="78%">
+
+
+<p style="margin-top: 1em" valign="top">Load an example
+from a library into the current project. A
+&quot;libs.txt&quot; will be generated from the example upon
+loading.</p> </td>
+</table>
+
+<p style="margin-left:22%; margin-top: 1em">Example:</p>
+
+<p style="margin-left:22%; margin-top: 1em"><b>po lib
+ex</b> load libraryName exampleName</p>
+
+<a name="KEYBOARD SHORTCUTS"></a>
+<h2>KEYBOARD SHORTCUTS</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">The following
+shortcuts allow you to run common po-util commands quickly
+while using Atom. This requires the &quot;build&quot;
+package for Atom. Get the package and a few other handy
+packages with: <b>po setup-atom</b></p>
+
+<table width="100%" border=0 rules="none" frame="void"
+       cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="7%">
+
+
+<p style="margin-top: 1em" valign="top"><b>build</b></p></td>
+<td width="4%"></td>
+<td width="15%">
+
+
+<p style="margin-top: 1em" valign="top">CTRL-ALT-1</p></td>
+<td width="63%">
+</td>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="7%">
+
+
+<p><b>flash</b></p></td>
+<td width="4%"></td>
+<td width="15%">
+
+
+<p>CTRL-ALT-2</p></td>
+<td width="63%">
+</td>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="7%">
+
+
+<p><b>clean</b></p></td>
+<td width="4%"></td>
+<td width="15%">
+
+
+<p>CTRL-ALT-3</p></td>
+<td width="63%">
+</td>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="7%">
+
+
+<p><b>dfu</b></p></td>
+<td width="4%"></td>
+<td width="15%">
+
+
+<p>CTRL-ALT-4</p></td>
+<td width="63%">
+</td>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="7%">
+
+
+<p><b>ota</b></p></td>
+<td width="4%"></td>
+<td width="15%">
+
+
+<p>CTRL-ALT-5</p></td>
+<td width="63%">
+</td>
+</table>
+
+<a name="AUTHOR"></a>
+<h2>AUTHOR</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">Nathan D.
+Robinson &lt;nrobinson2000@me.com&gt;</p>
+
+<a name="REPORTING BUGS"></a>
+<h2>REPORTING BUGS</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">po on GitHub:
+&lt;https://github.com/nrobinson2000/po&gt;</p>
+
+<a name="COPYRIGHT"></a>
+<h2>COPYRIGHT</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">Copyright (C)
+2018 Nathan D. Robinson. License GPLv3+: GNU GPL version 3
+or later &lt;http://gnu.org/licenses/gpl.html&gt;. This is
+free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.</p>
+
+<a name="SEE ALSO"></a>
+<h2>SEE ALSO</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">Documentation
+available at: &lt;https://docs.po-util.com&gt; <br>
+Gitter Community avaliable at:
+&lt;https://gitter.im/po-util/Lobby&gt;</p>
+
+<a name="NOTES"></a>
+<h2>NOTES</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">To build
+locally for Raspberry Pi you must have Docker installed.</p>
+
+<a name="CREDITS"></a>
+<h2>CREDITS</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">Some elements
+were inspired by GPL projects and threads on the Particle
+Community and StackOverflow.</p>
+<hr>
+</body>
+</html>
