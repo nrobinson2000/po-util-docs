@@ -167,8 +167,8 @@ DEVICE_TYPE clean`.
 ## DFU Commands
 
 To upload precompiled code over USB, run `po DEVICE_TYPE dfu`. To put your device
-into dfu mode, run `po dfu-open`. To get your device out of dfu mode, run `po
-dfu-close`.
+into dfu mode, run `po dfu open`. To get your device out of dfu mode, run `po
+dfu close`.
 
 {% sample lang="cpp" %}
 
@@ -210,13 +210,13 @@ One of the features of po-util is automatically placing devices into DFU mode fo
 {% sample lang="cpp" %}
 
 ```bash
-$ po dfu-open # Automatically place a device in DFU mode
+$ po dfu open # Automatically place a device in DFU mode
 
 $ po list # List all attached devices in serial
 
-$ po dfu-open -d /dev/cu.usbmodem1441 # Put a specific device into DFU mode
+$ po dfu open -d /dev/cu.usbmodem1441 # Put a specific device into DFU mode
 
-$ po dfu-close # Get device out of dfu mode
+$ po dfu close # Get device out of dfu mode
 ```
 
 {% endmethod %}

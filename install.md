@@ -10,7 +10,7 @@ After installing please read the [Quick Start Guide](quick-start.md) for more in
 
 {% sample lang="cpp" %}
 ```bash
-$ bash <(curl -sL https://master.po-util.com/install)
+$ bash <(curl -sL get.po-util.com)
 ```
 
 
